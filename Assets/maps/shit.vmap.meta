@@ -1,0 +1,22 @@
+{
+  "publish": {
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "shit",
+      "Type": "map",
+      "Org": "local",
+      "Ident": "shit",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": [],
+      "EditorReferences": [
+        "facepunch.goback_material#46446",
+        "jodiscontent.balloon_cart#24475"
+      ],
+      "Metadata": {
+        "SingleAssetSource": "maps/shit.vmap"
+      }
+    }
+  }
+}

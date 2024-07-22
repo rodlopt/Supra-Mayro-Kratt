@@ -1,0 +1,399 @@
+{
+  "__guid": "f99a8781-35a2-4ae2-a926-74ca02974efb",
+  "GameObjects": [
+    {
+      "__guid": "d3a38897-c014-4a6d-9c33-9564b75239ff",
+      "Flags": 0,
+      "Name": "2D Skybox",
+      "Tags": "skybox",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkyBox2D",
+          "__guid": "3e77c9c8-7eb1-4dbd-b22b-2b65b98ce407",
+          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+          "Tint": "1,1,1,1"
+        }
+      ]
+    },
+    {
+      "__guid": "01cf60c7-4d0f-4fdb-aecc-ca252be8d7c6",
+      "Flags": 0,
+      "Name": "youccanotbeatme",
+      "Position": "0,0,36.38737",
+      "Rotation": "0,0,-0.7071067,0.7071068",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "f6f26013-ca63-4488-b4b5-d3164b62bb51",
+          "BodyGroups": 18446744073709551615,
+          "CreateBoneObjects": false,
+          "Model": "models/youccanotbeatme.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "cc343dab-d769-4d18-8045-0d20848bc53c",
+          "IsTrigger": false,
+          "Model": "models/youccanotbeatme.vmdl",
+          "Static": false
+        },
+        {
+          "__type": "Car",
+          "__guid": "48f67233-e39f-4084-80e5-ee2b337e2b01",
+          "acceleration": 500,
+          "currentSpeed": 0
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "fea12015-ba2b-4a10-b49c-7f1c2454755b",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {
+            "Pitch": true,
+            "Roll": true
+          },
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Kart",
+          "__guid": "ba64ab5f-1017-4a70-8479-d8f016aabb9b",
+          "acceleration": 0,
+          "maxSpeed": 0,
+          "rotationSpeed": 0
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "98e28615-1e16-452b-b166-ba3ffcaebf55",
+          "Flags": 0,
+          "Name": "Bone",
+          "Position": "-0.00000006444998,-0.000001113229,-8.540649",
+          "Rotation": "0.4999999,0.4999997,0.4999999,0.5000005",
+          "Enabled": true,
+          "Children": [
+            {
+              "__guid": "9d614d7d-3e79-4d56-a894-8df8bf29aad2",
+              "Flags": 0,
+              "Name": "Bone_001",
+              "Position": "0.000002972858,9.645594,0.000006399875",
+              "Rotation": "-0.05097292,-0.0000001752099,-0.000000055613,0.9987001",
+              "Enabled": true,
+              "Children": [
+                {
+                  "__guid": "ee0a3437-ec9d-4965-8485-8b3141b6dc11",
+                  "Flags": 0,
+                  "Name": "Bone_002",
+                  "Position": "0.000002806804,10.82389,0.000003755093",
+                  "Rotation": "0.050973,0.00000008580302,0.00000002581069,0.9987001",
+                  "Enabled": true,
+                  "Children": [
+                    {
+                      "__guid": "96f29a6d-4686-46b8-a7dd-ccfb7ce00003",
+                      "Flags": 0,
+                      "Name": "Bone_003",
+                      "Position": "0.000002241264,2.135169,-0.000004410744",
+                      "Rotation": "-0.005024968,-0.00000008903441,0.0000000003762799,0.9999874",
+                      "Enabled": true,
+                      "Children": [
+                        {
+                          "__guid": "c9c90710-a0dc-47a2-9e9b-f28d246c98f7",
+                          "Flags": 0,
+                          "Name": "Bone_003_end",
+                          "Position": "0.000004381161,8.583114,-0.2460393",
+                          "Rotation": "0.009749212,-0.0000000007262235,0.0000003569011,0.9999525",
+                          "Enabled": true
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "56afdc7d-8fe1-4ab4-8be0-d8fd4681c624",
+                  "Flags": 0,
+                  "Name": "1_L",
+                  "Position": "5.620109,6.047695,0.6189577",
+                  "Rotation": "-0.05909738,-0.05285965,-0.6426555,0.7620414",
+                  "Enabled": true,
+                  "Children": [
+                    {
+                      "__guid": "884e0e21-b4d5-4755-9cba-7b19f94e3bc1",
+                      "Flags": 0,
+                      "Name": "forearm_L",
+                      "Position": "-0.00000333786,6.961879,0.000002980232",
+                      "Rotation": "0.01897167,0.0000556888,-0.004577668,0.9998096",
+                      "Enabled": true,
+                      "Children": [
+                        {
+                          "__guid": "e3efa2f7-63ba-4e89-8b58-a9287fda6eb9",
+                          "Flags": 0,
+                          "Name": "hand_L",
+                          "Position": "-0.000002384186,6.046021,0",
+                          "Rotation": "-0.001889396,-0.00005190962,-0.00716702,0.9999726",
+                          "Enabled": true,
+                          "Children": [
+                            {
+                              "__guid": "454a3324-ad59-479d-aef3-d0b80be01677",
+                              "Flags": 0,
+                              "Name": "hand_L_end",
+                              "Position": "13.63613,-10.47077,9.357226",
+                              "Rotation": "0.5650607,0.1082243,-0.2953514,0.7627328",
+                              "Enabled": true
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "cda2d05f-b1ac-493c-8b19-129f6416cb71",
+                  "Flags": 0,
+                  "Name": "1_R",
+                  "Position": "-5.620106,6.047689,0.6189516",
+                  "Rotation": "-0.05909747,0.05285978,0.6426557,0.7620413",
+                  "Enabled": true,
+                  "Children": [
+                    {
+                      "__guid": "23fee4ad-503f-42e9-96ce-2d8f48c2498f",
+                      "Flags": 0,
+                      "Name": "forearm_R",
+                      "Position": "0.000001907349,6.961869,-0.000004410744",
+                      "Rotation": "0.01897167,-0.00005555095,0.004577652,0.9998096",
+                      "Enabled": true,
+                      "Children": [
+                        {
+                          "__guid": "d0fc285c-180e-4b19-b7a4-429f46a0e5e9",
+                          "Flags": 0,
+                          "Name": "hand_R",
+                          "Position": "-0.00000333786,6.046013,-0.000004410744",
+                          "Rotation": "-0.001889389,0.00005193944,0.007167015,0.9999726",
+                          "Enabled": true,
+                          "Children": [
+                            {
+                              "__guid": "dbc6fb2a-93a2-420b-a0db-42d269bfac0b",
+                              "Flags": 0,
+                              "Name": "hand_R_end",
+                              "Position": "-13.63612,-10.47074,9.357208",
+                              "Rotation": "0.565061,-0.1082247,0.295352,0.7627323",
+                              "Enabled": true
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "e5b78801-6e8a-4cf0-85cc-d838eadcba18",
+              "Flags": 0,
+              "Name": "2_L",
+              "Position": "3.129241,0.5375805,0.000002136969",
+              "Rotation": "0.7353315,0.1113362,0.6618599,-0.09398554",
+              "Enabled": true,
+              "Children": [
+                {
+                  "__guid": "0887ea40-506b-4385-bdb8-40469ca5c388",
+                  "Flags": 0,
+                  "Name": "3_L",
+                  "Position": "-0.000001192093,10.23756,0.000009655952",
+                  "Rotation": "0.02802533,-0.01914046,0.06905498,0.9970354",
+                  "Enabled": true,
+                  "Children": [
+                    {
+                      "__guid": "758501f0-ffc1-451a-9942-d7bd9f389d39",
+                      "Flags": 0,
+                      "Name": "feet_L",
+                      "Position": "-0.000004529953,8.884979,0.000007510185",
+                      "Rotation": "-0.04700907,0.02984464,-0.7498581,0.6592512",
+                      "Enabled": true,
+                      "Children": [
+                        {
+                          "__guid": "334fa353-014e-47ef-b986-6ebac7f65bc1",
+                          "Flags": 0,
+                          "Name": "feet_L_end",
+                          "Position": "17.71338,18.83636,3.118522",
+                          "Rotation": "0.09890775,-0.03756833,-0.4393589,0.8920591",
+                          "Enabled": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "7e7c14f1-8adf-4bf5-88df-01aaf7fe6638",
+              "Flags": 0,
+              "Name": "2_R",
+              "Position": "-3.129242,0.5375786,-0.000001911848",
+              "Rotation": "0.7353319,-0.111336,-0.6618596,-0.09398509",
+              "Enabled": true,
+              "Children": [
+                {
+                  "__guid": "22fcc029-e660-4a82-972a-21f4a10e5ce8",
+                  "Flags": 0,
+                  "Name": "3_R",
+                  "Position": "0.000003814697,10.23757,0.000007748604",
+                  "Rotation": "0.02802543,0.01914035,-0.06905501,0.9970354",
+                  "Enabled": true,
+                  "Children": [
+                    {
+                      "__guid": "9b055634-fe5e-4d20-9d87-fd72bd3653c2",
+                      "Flags": 0,
+                      "Name": "feet_R",
+                      "Position": "0.000006198883,8.884991,0.00001201034",
+                      "Rotation": "-0.04700977,-0.02984508,0.749859,0.6592503",
+                      "Enabled": true,
+                      "Children": [
+                        {
+                          "__guid": "40d3868e-f851-4d86-8949-49dcc9d9e31d",
+                          "Flags": 0,
+                          "Name": "feet_R_end",
+                          "Position": "-17.71334,18.8364,3.11848",
+                          "Rotation": "0.09890854,0.037568,0.4393581,0.8920595",
+                          "Enabled": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "e8fd935e-7e67-4256-83bb-4fc301bb6845",
+              "Flags": 0,
+              "Name": "car",
+              "Position": "-0.000005956048,-18.33527,-14.97966",
+              "Rotation": "0.7100768,-0.0000002850708,0.0000003129058,0.7041242",
+              "Enabled": true,
+              "Children": [
+                {
+                  "__guid": "68b72bbd-119d-4589-8fc6-33ddaab3c0a0",
+                  "Flags": 0,
+                  "Name": "car_end",
+                  "Position": "0.00004392339,46.95657,-0.1494446",
+                  "Enabled": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "ce0aea27-9a1a-4cd5-87aa-26c442dbb096",
+          "Flags": 0,
+          "Name": "Camera",
+          "Position": "-211.4844,-0.000004332163,64.27776",
+          "Rotation": "0,0.1264567,0,0.9919721",
+          "Tags": "maincamera",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "675d376c-2861-401b-ae17-dcb86a2b99d8",
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 90,
+              "IsMainCamera": true,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 10
+            }
+          ]
+        },
+        {
+          "__guid": "3dcab933-c4ac-46c9-9760-aa4e9264132d",
+          "Flags": 0,
+          "Name": "Object",
+          "Position": "0,0,12.75605",
+          "Enabled": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SoundPointComponent",
+              "__guid": "a6dabc56-ec85-4ed7-a1c1-c47ce13ae1fe",
+              "DistanceAttenuation": false,
+              "DistanceAttenuationOverride": true,
+              "Force2d": false,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": true,
+              "SoundEvent": "sound/ohyeah.sound",
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "unknown",
+                "Id": "00000000-0000-0000-0000-000000000000"
+              },
+              "Volume": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "f5daf114-f8af-4c05-b0d6-3890b073142a",
+      "Flags": 0,
+      "Name": "map",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "d749ac26-91cd-47a3-ab77-ba92716c77a3",
+          "__version": 1,
+          "MapName": "maps/shit.vmap",
+          "NoOrigin": false,
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "race kratt",
+  "Description": "",
+  "ResourceVersion": 1,
+  "__references": [],
+  "__version": 1
+}
