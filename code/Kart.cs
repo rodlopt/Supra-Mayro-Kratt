@@ -14,14 +14,9 @@ public sealed class Kart : Component
 	}
 	protected override void OnFixedUpdate()
 	{
-		if ( Input.Down( "Forward" ) )
-		{
-			
-		}
-		
 		if ( Input.Down( "Jump" ) )
 		{
-			rb.Velocity = Vector3.Zero;
+			rb.Velocity = rb.Velocity + Vector3.Up * 64;
 		}
 	}
 }

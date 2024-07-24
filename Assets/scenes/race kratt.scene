@@ -67,6 +67,12 @@
           "__guid": "ba64ab5f-1017-4a70-8479-d8f016aabb9b",
           "acceleration": 0,
           "maxSpeed": 0,
+          "rb": {
+            "_type": "component",
+            "component_id": "fea12015-ba2b-4a10-b49c-7f1c2454755b",
+            "go": "01cf60c7-4d0f-4fdb-aecc-ca252be8d7c6",
+            "component_type": "Rigidbody"
+          },
           "rotationSpeed": 0
         }
       ],
