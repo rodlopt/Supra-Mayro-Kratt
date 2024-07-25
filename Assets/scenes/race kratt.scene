@@ -5,14 +5,15 @@
       "__guid": "d3a38897-c014-4a6d-9c33-9564b75239ff",
       "Flags": 0,
       "Name": "2D Skybox",
+      "Rotation": "0,0,0.4999999,0.8660256",
       "Tags": "skybox",
       "Enabled": true,
       "Components": [
         {
           "__type": "Sandbox.SkyBox2D",
           "__guid": "3e77c9c8-7eb1-4dbd-b22b-2b65b98ce407",
-          "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
-          "Tint": "1,1,1,1"
+          "SkyMaterial": "materials/desertbackground2.vmat",
+          "Tint": "1,0.71765,0.3451,1"
         }
       ]
     },
@@ -24,6 +25,51 @@
       "Rotation": "0,0,-0.7071067,0.7071068",
       "Enabled": true,
       "Components": [
+        {
+          "__type": "Kart",
+          "__guid": "ba64ab5f-1017-4a70-8479-d8f016aabb9b",
+          "acceleration": 20,
+          "brrr": {
+            "_type": "component",
+            "component_id": "18b5f430-30a9-4751-bc8c-1f7f95d2ee4d",
+            "go": "01cf60c7-4d0f-4fdb-aecc-ca252be8d7c6",
+            "component_type": "SoundPointComponent"
+          },
+          "maxSpeed": 0,
+          "minimumPitch": 0.6,
+          "rb": {
+            "_type": "component",
+            "component_id": "fea12015-ba2b-4a10-b49c-7f1c2454755b",
+            "go": "01cf60c7-4d0f-4fdb-aecc-ca252be8d7c6",
+            "component_type": "Rigidbody"
+          },
+          "rotationSpeed": 1
+        },
+        {
+          "__type": "Sandbox.SoundPointComponent",
+          "__guid": "18b5f430-30a9-4751-bc8c-1f7f95d2ee4d",
+          "DistanceAttenuation": false,
+          "DistanceAttenuationOverride": false,
+          "Force2d": true,
+          "MaxRepeatTime": 1,
+          "MinRepeatTime": 1,
+          "Occlusion": false,
+          "OcclusionOverride": false,
+          "OcclusionRadius": 32,
+          "Pitch": 1,
+          "PlayOnStart": true,
+          "ReflectionOverride": false,
+          "Reflections": false,
+          "Repeat": true,
+          "SoundEvent": "sound/brrrrrr.sound",
+          "SoundOverride": true,
+          "StopOnNew": false,
+          "TargetMixer": {
+            "Name": "game",
+            "Id": "90422e81-b425-45ef-b29a-89a0dc9caf5b"
+          },
+          "Volume": 1
+        },
         {
           "__type": "Sandbox.SkinnedModelRenderer",
           "__guid": "f6f26013-ca63-4488-b4b5-d3164b62bb51",
@@ -42,12 +88,6 @@
           "Static": false
         },
         {
-          "__type": "Car",
-          "__guid": "48f67233-e39f-4084-80e5-ee2b337e2b01",
-          "acceleration": 500,
-          "currentSpeed": 0
-        },
-        {
           "__type": "Sandbox.Rigidbody",
           "__guid": "fea12015-ba2b-4a10-b49c-7f1c2454755b",
           "AngularDamping": 0,
@@ -61,19 +101,6 @@
           "MotionEnabled": true,
           "RigidbodyFlags": 0,
           "StartAsleep": false
-        },
-        {
-          "__type": "Kart",
-          "__guid": "ba64ab5f-1017-4a70-8479-d8f016aabb9b",
-          "acceleration": 0,
-          "maxSpeed": 0,
-          "rb": {
-            "_type": "component",
-            "component_id": "fea12015-ba2b-4a10-b49c-7f1c2454755b",
-            "go": "01cf60c7-4d0f-4fdb-aecc-ca252be8d7c6",
-            "component_type": "Rigidbody"
-          },
-          "rotationSpeed": 0
         }
       ],
       "Children": [
@@ -375,6 +402,25 @@
         }
       ],
       "Children": []
+    },
+    {
+      "__guid": "ecdcc64a-5849-42bd-8c95-9b4ef5276722",
+      "Flags": 0,
+      "Name": "Sun",
+      "Rotation": "-0.1830127,0.4829628,-0.1830127,0.8365163",
+      "Tags": "light_directional,light",
+      "Enabled": true,
+      "Components": [
+        {
+          "__type": "Sandbox.DirectionalLight",
+          "__guid": "647874d0-fcb2-4f49-bd16-46fa21a2f198",
+          "FogMode": "Enabled",
+          "FogStrength": 1,
+          "LightColor": "1,1,1,1",
+          "Shadows": true,
+          "SkyColor": "0,0,0,0"
+        }
+      ]
     }
   ],
   "SceneProperties": {

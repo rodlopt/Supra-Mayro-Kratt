@@ -1,4 +1,5 @@
 using Sandbox;
+using System.Security;
 
 public sealed class Car : Component
 {
@@ -35,6 +36,11 @@ public sealed class Car : Component
 		if ( Input.Down( "Right" ) )
 		{
 			rot *= Rotation.From( 0, Time.Delta * -90.0f, 0 );
+		}
+
+		if ( Input.Down( "Jump" ) )
+		{
+			currentSpeed = 0.0f;
 		}
 
 		Transform.Local = new Transform( pos, rot, 1 );
