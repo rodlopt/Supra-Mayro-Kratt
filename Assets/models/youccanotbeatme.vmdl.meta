@@ -1,0 +1,19 @@
+{
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "youcannotbeatme",
+      "Type": "model",
+      "Org": "peter",
+      "Ident": "youcannotbeatme",
+      "Schema": 0,
+      "IncludeSourceFiles": true,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "models/youccanotbeatme.vmdl"
+      }
+    }
+  }
+}

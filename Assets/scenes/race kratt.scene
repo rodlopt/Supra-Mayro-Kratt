@@ -1,5 +1,5 @@
 {
-  "__guid": "f99a8781-35a2-4ae2-a926-74ca02974efb",
+  "__guid": "a81ebf90-bd6f-479c-ae7e-3618ed0b1c88",
   "GameObjects": [
     {
       "__guid": "d3a38897-c014-4a6d-9c33-9564b75239ff",
@@ -368,6 +368,7 @@
           "__type": "Sandbox.MapInstance",
           "__guid": "d749ac26-91cd-47a3-ab77-ba92716c77a3",
           "__version": 1,
+          "EnableCollision": true,
           "MapName": "maps/shit.vmap",
           "NoOrigin": false,
           "UseMapFromLaunch": false
