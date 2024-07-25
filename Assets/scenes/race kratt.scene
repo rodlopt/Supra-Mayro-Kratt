@@ -31,7 +31,7 @@
           "acceleration": 20,
           "brrr": {
             "_type": "component",
-            "component_id": "18b5f430-30a9-4751-bc8c-1f7f95d2ee4d",
+            "component_id": "d05479f8-b9ad-4a35-b06b-eb5adb0802e1",
             "go": "01cf60c7-4d0f-4fdb-aecc-ca252be8d7c6",
             "component_type": "SoundPointComponent"
           },
@@ -43,32 +43,7 @@
             "go": "01cf60c7-4d0f-4fdb-aecc-ca252be8d7c6",
             "component_type": "Rigidbody"
           },
-          "rotationSpeed": 1
-        },
-        {
-          "__type": "Sandbox.SoundPointComponent",
-          "__guid": "18b5f430-30a9-4751-bc8c-1f7f95d2ee4d",
-          "DistanceAttenuation": false,
-          "DistanceAttenuationOverride": false,
-          "Force2d": true,
-          "MaxRepeatTime": 1,
-          "MinRepeatTime": 1,
-          "Occlusion": false,
-          "OcclusionOverride": false,
-          "OcclusionRadius": 32,
-          "Pitch": 1,
-          "PlayOnStart": true,
-          "ReflectionOverride": false,
-          "Reflections": false,
-          "Repeat": true,
-          "SoundEvent": "sound/brrrrrr.sound",
-          "SoundOverride": true,
-          "StopOnNew": false,
-          "TargetMixer": {
-            "Name": "game",
-            "Id": "90422e81-b425-45ef-b29a-89a0dc9caf5b"
-          },
-          "Volume": 1
+          "rotationSpeed": 0.4
         },
         {
           "__type": "Sandbox.SkinnedModelRenderer",
@@ -101,6 +76,31 @@
           "MotionEnabled": true,
           "RigidbodyFlags": 0,
           "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.SoundPointComponent",
+          "__guid": "d05479f8-b9ad-4a35-b06b-eb5adb0802e1",
+          "DistanceAttenuation": false,
+          "DistanceAttenuationOverride": false,
+          "Force2d": true,
+          "MaxRepeatTime": 1,
+          "MinRepeatTime": 1,
+          "Occlusion": false,
+          "OcclusionOverride": false,
+          "OcclusionRadius": 32,
+          "Pitch": 1,
+          "PlayOnStart": true,
+          "ReflectionOverride": false,
+          "Reflections": false,
+          "Repeat": false,
+          "SoundEvent": "sound/brrrrrr.sound",
+          "SoundOverride": false,
+          "StopOnNew": false,
+          "TargetMixer": {
+            "Name": "game",
+            "Id": "0fa0c974-0612-40bc-8ed1-2ddbbf1557fc"
+          },
+          "Volume": 0.43
         }
       ],
       "Children": [

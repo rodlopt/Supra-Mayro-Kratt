@@ -4,18 +4,16 @@ using System.Security;
 
 public sealed class Kart : Component
 {
-	[Property] public float maxSpeed;
-	[Property] public float acceleration;
-	[Property] public float rotationSpeed;
-	[Property] public float minimumPitch;
+	[Property] public float maxSpeed { get; set; }
+	[Property] public float acceleration { get; set; }
+	[Property] public float rotationSpeed { get; set; }
+	[Property] public float minimumPitch { get; set; }
 
-	[Property] public SoundPointComponent brrr;
-
-	[Property] public Rigidbody rb;
+	[Property] public SoundPointComponent brrr { get; set; }
+	[Property] public Rigidbody rb { get; set; }
 
 	protected override void OnUpdate()
 	{
-
 		brrr.Pitch = MathF.Max( 0.001f * rb.Velocity.Length, minimumPitch );
 	}
 	protected override void OnFixedUpdate()
