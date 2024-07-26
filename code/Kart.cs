@@ -7,14 +7,19 @@ public sealed class Kart : Component
 	[Property] public float maxSpeed { get; set; }
 	[Property] public float acceleration { get; set; }
 	[Property] public float rotationSpeed { get; set; }
+	[Property] public float smoothingSpeed { get; set; }
 	[Property] public float minimumPitch { get; set; }
 
+
+	[Property] public SkinnedModelRenderer mayro { get; set; }
 	[Property] public SoundPointComponent brrr { get; set; }
 	[Property] public Rigidbody rb { get; set; }
+	[Property] public MayroAnimationHelper AnimationHelper { get; set; }
 
 	protected override void OnUpdate()
 	{
 		brrr.Pitch = MathF.Max( 0.001f * rb.Velocity.Length, minimumPitch );
+
 	}
 	protected override void OnFixedUpdate()
 	{
@@ -34,11 +39,16 @@ public sealed class Kart : Component
 		if ( Input.Down( "Left" ) )
 		{
 			rot *= Rotation.From( 0, Time.Delta * 90.0f, 0 ) * rotationSpeed;
+			AnimationHelper.TiltLevel = -1f;
 		}
-
-		if ( Input.Down( "Right" ) )
+		else if ( Input.Down( "Right" ) )
 		{
 			rot *= Rotation.From( 0, Time.Delta * -90.0f, 0 ) * rotationSpeed;
+			AnimationHelper.TiltLevel = 1f;
+		}
+		else
+		{
+			AnimationHelper.TiltLevel = MathX.Lerp( AnimationHelper.TiltLevel, 0f, Time.Delta * smoothingSpeed );
 		}
 
 		if ( Input.Down( "Jump" ) )

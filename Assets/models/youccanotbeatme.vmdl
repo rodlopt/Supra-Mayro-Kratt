@@ -95,6 +95,7 @@
 								"Cylinder_005",
 								"Cylinder_003",
 								"Cylinder_001",
+								"Cylinder_002",
 							]
 						}
 					},
@@ -121,13 +122,13 @@
 				[
 					{
 						_class = "AnimFile"
-						name = "youcannotbeatme"
+						name = "sit"
 						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
-						looping = false
+						looping = true
 						delta = false
 						worldSpace = false
 						hidden = false
@@ -139,12 +140,35 @@
 						start_frame = -1
 						end_frame = -1
 						framerate = -1.0
-						take = 1
+						take = 3
 						reverse = false
 					},
 					{
 						_class = "AnimFile"
 						name = "idle"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/youcannotbeatme.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 0
+						reverse = false
+					},
+					{
+						_class = "AnimFile"
+						name = "right"
 						activity_name = ""
 						activity_weight = 1
 						weight_list_name = ""
@@ -165,6 +189,29 @@
 						take = 2
 						reverse = false
 					},
+					{
+						_class = "AnimFile"
+						name = "left"
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						disable_interpolation = false
+						enable_scale = false
+						source_filename = "models/youcannotbeatme.fbx"
+						start_frame = -1
+						end_frame = -1
+						framerate = -1.0
+						take = 1
+						reverse = false
+					},
 				]
 				default_root_bone_name = ""
 			},
@@ -177,9 +224,9 @@
 						parent_bone = ""
 						surface_prop = "default"
 						collision_tags = "solid"
-						origin = [ 47.970215, 0.0, -104.955612 ]
+						origin = [ 47.970215, 0.0, -91.97731 ]
 						angles = [ 0.0, 0.0, 0.0 ]
-						dimensions = [ 258.674011, 206.0, 165.33493 ]
+						dimensions = [ 258.674011, 206.0, 139.378326 ]
 					},
 				]
 			},

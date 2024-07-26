@@ -9,6 +9,112 @@
 			{
 				key = 
 				{
+					m_id = 344905106
+				}
+				value = 
+				{
+					_class = "CBlendAnimNode"
+					m_sName = "Unnamed"
+					m_vecPosition = [ -96.0, 144.0 ]
+					m_nNodeID = 
+					{
+						m_id = 344905106
+					}
+					m_sNote = ""
+					m_children = 
+					[
+						{
+							m_inputConnection = 
+							{
+								m_nodeID = 
+								{
+									m_id = 1478619527
+								}
+								m_outputID = 
+								{
+									m_id = 4294967295
+								}
+							}
+							m_name = "left"
+							m_blendValue = -1.0
+						},
+						{
+							m_inputConnection = 
+							{
+								m_nodeID = 
+								{
+									m_id = 1810320101
+								}
+								m_outputID = 
+								{
+									m_id = 4294967295
+								}
+							}
+							m_name = "sit"
+							m_blendValue = 0.0
+						},
+						{
+							m_inputConnection = 
+							{
+								m_nodeID = 
+								{
+									m_id = 554600211
+								}
+								m_outputID = 
+								{
+									m_id = 4294967295
+								}
+							}
+							m_name = "right"
+							m_blendValue = 1.0
+						},
+					]
+					m_blendValueSource = "Parameter"
+					m_param = 
+					{
+						m_id = 842994495
+					}
+					m_blendKeyType = "BlendKey_UserValue"
+					m_bLockBlendOnReset = false
+					m_bSyncCycles = true
+					m_bLoop = true
+					m_bLockWhenWaning = true
+					m_damping = 
+					{
+						_class = "CAnimInputDamping"
+						m_speedFunction = "NoDamping"
+						m_fSpeedScale = 1.0
+						m_fMinSpeed = 10.0
+						m_fMaxTension = 1000.0
+						m_fTension = 100.0
+						m_fDamping = 5.0
+					}
+				}
+			},
+			{
+				key = 
+				{
+					m_id = 554600211
+				}
+				value = 
+				{
+					_class = "CSequenceAnimNode"
+					m_sName = "Unnamed"
+					m_vecPosition = [ -336.0, 224.0 ]
+					m_nNodeID = 
+					{
+						m_id = 554600211
+					}
+					m_sNote = ""
+					m_tagSpans = [  ]
+					m_sequenceName = "right"
+					m_playbackSpeed = 1.0
+					m_bLoop = false
+				}
+			},
+			{
+				key = 
+				{
 					m_id = 1020450659
 				}
 				value = 
@@ -25,13 +131,55 @@
 					{
 						m_nodeID = 
 						{
-							m_id = 1973424838
+							m_id = 344905106
 						}
 						m_outputID = 
 						{
 							m_id = 4294967295
 						}
 					}
+				}
+			},
+			{
+				key = 
+				{
+					m_id = 1478619527
+				}
+				value = 
+				{
+					_class = "CSequenceAnimNode"
+					m_sName = "Unnamed"
+					m_vecPosition = [ -334.562897, 100.840088 ]
+					m_nNodeID = 
+					{
+						m_id = 1478619527
+					}
+					m_sNote = ""
+					m_tagSpans = [  ]
+					m_sequenceName = "left"
+					m_playbackSpeed = 1.0
+					m_bLoop = false
+				}
+			},
+			{
+				key = 
+				{
+					m_id = 1810320101
+				}
+				value = 
+				{
+					_class = "CSequenceAnimNode"
+					m_sName = "Unnamed"
+					m_vecPosition = [ -336.0, 160.0 ]
+					m_nNodeID = 
+					{
+						m_id = 1810320101
+					}
+					m_sNote = ""
+					m_tagSpans = [  ]
+					m_sequenceName = "sit"
+					m_playbackSpeed = 1.0
+					m_bLoop = true
 				}
 			},
 			{
@@ -50,7 +198,7 @@
 					}
 					m_sNote = ""
 					m_tagSpans = [  ]
-					m_sequenceName = "idle"
+					m_sequenceName = "youcannotbeatme"
 					m_playbackSpeed = 1.0
 					m_bLoop = true
 				}
@@ -60,7 +208,23 @@
 	m_pParameterList = 
 	{
 		_class = "CAnimParameterList"
-		m_Parameters = [  ]
+		m_Parameters = 
+		[
+			{
+				_class = "CFloatAnimParameter"
+				m_name = "tilt"
+				m_id = 
+				{
+					m_id = 842994495
+				}
+				m_previewButton = "ANIMPARAM_BUTTON_NONE"
+				m_bUseMostRecentValue = false
+				m_bAutoReset = false
+				m_fDefaultValue = 0.0
+				m_fMinValue = -1.0
+				m_fMaxValue = 1.0
+			},
+		]
 	}
 	m_pTagManager = 
 	{
