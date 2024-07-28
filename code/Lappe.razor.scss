@@ -1,0 +1,19 @@
+Lappe
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 24px;
+	
+	.lappe
+	{
+		color: white;
+		position: absolute;
+		bottom: 32px;
+		left: 100px;
+		font-size: 100px;
+		transform: scaleX(1.4);
+	}
+}

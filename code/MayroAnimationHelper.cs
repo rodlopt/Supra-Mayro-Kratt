@@ -9,5 +9,11 @@ public sealed class MayroAnimationHelper : Component, Component.ExecuteInEditor
 		set => Target.Set("tilt", value );
 	}
 
+	public bool Win
+	{
+		get => Target.GetBool( "win" );
+		set => Target.Set("win", value );
+	}
+
 
 }

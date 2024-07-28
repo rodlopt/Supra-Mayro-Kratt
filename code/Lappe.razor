@@ -1,0 +1,19 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+	<div class="lappe">
+        <p>lappe @mayro.lappe/3</p>
+    </div>
+</root>
+
+@code
+{
+    [Property] Kart mayro { get; set; }
+
+	protected override int BuildHash()
+    {
+        return System.HashCode.Combine( mayro.lappe );
+    }
+}

@@ -3,12 +3,12 @@
   "Volume": "1.00,1.00,0",
   "Pitch": "1.00,1.00,0",
   "Decibels": 70,
-  "SelectionMode": "Random",
+  "SelectionMode": "Forward",
   "Sounds": [
-    "sound/noquestion.vsnd",
+    "sound/letsgo.vsnd",
     "sound/youcannotbeatme.vsnd",
-    null,
-    null
+    "sound/noquestion.vsnd",
+    "sound/ineverdoubtedit.vsnd"
   ],
   "Occlusion": true,
   "AirAbsorption": true,

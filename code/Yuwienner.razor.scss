@@ -1,0 +1,17 @@
+Yuwienner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-size: 24px;
+
+	.wienner {
+		color: white;
+		position: absolute;
+		left: 50%;
+		bottom: 50%;
+		font-size: 100px;
+		transform: scaleX(1.4);
+	}
+}

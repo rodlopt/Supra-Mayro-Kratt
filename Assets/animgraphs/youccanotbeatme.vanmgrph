@@ -15,7 +15,7 @@
 				{
 					_class = "CBlendAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -96.0, 144.0 ]
+					m_vecPosition = [ -272.0, 144.0 ]
 					m_nNodeID = 
 					{
 						m_id = 344905106
@@ -94,13 +94,87 @@
 			{
 				key = 
 				{
+					m_id = 398937811
+				}
+				value = 
+				{
+					_class = "CSelectorAnimNode"
+					m_sName = "Unnamed"
+					m_vecPosition = [ -32.0, 208.0 ]
+					m_nNodeID = 
+					{
+						m_id = 398937811
+					}
+					m_sNote = ""
+					m_children = 
+					[
+						{
+							m_nodeID = 
+							{
+								m_id = 344905106
+							}
+							m_outputID = 
+							{
+								m_id = 4294967295
+							}
+						},
+						{
+							m_nodeID = 
+							{
+								m_id = 754043647
+							}
+							m_outputID = 
+							{
+								m_id = 4294967295
+							}
+						},
+					]
+					m_tags = 
+					[
+						{
+							m_id = 4294967295
+						},
+						{
+							m_id = 4294967295
+						},
+					]
+					m_selectionSource = "SelectionSource_Bool"
+					m_boolParamID = 
+					{
+						m_id = 518445668
+					}
+					m_enumParamID = 
+					{
+						m_id = 4294967295
+					}
+					m_intParamID = 
+					{
+						m_id = 4294967295
+					}
+					m_intParamMinValue = 0
+					m_intParamMaxValue = 2
+					m_blendDuration = 0.2
+					m_tagBehavior = "SelectorTagBehavior_OffWhenFinished"
+					m_bResetOnChange = true
+					m_bSyncCyclesOnChange = false
+					m_blendCurve = 
+					{
+						m_vControlPoint1 = [ 0.5, 0.0 ]
+						m_vControlPoint2 = [ 0.5, 1.0 ]
+					}
+					m_intParamNames = [  ]
+				}
+			},
+			{
+				key = 
+				{
 					m_id = 554600211
 				}
 				value = 
 				{
 					_class = "CSequenceAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -336.0, 224.0 ]
+					m_vecPosition = [ -512.0, 224.0 ]
 					m_nNodeID = 
 					{
 						m_id = 554600211
@@ -115,13 +189,34 @@
 			{
 				key = 
 				{
+					m_id = 754043647
+				}
+				value = 
+				{
+					_class = "CSequenceAnimNode"
+					m_sName = "Unnamed"
+					m_vecPosition = [ -272.0, 288.0 ]
+					m_nNodeID = 
+					{
+						m_id = 754043647
+					}
+					m_sNote = ""
+					m_tagSpans = [  ]
+					m_sequenceName = "win"
+					m_playbackSpeed = 1.5
+					m_bLoop = true
+				}
+			},
+			{
+				key = 
+				{
 					m_id = 1020450659
 				}
 				value = 
 				{
 					_class = "CRootAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ 136.0, 19.0 ]
+					m_vecPosition = [ 208.0, 144.0 ]
 					m_nNodeID = 
 					{
 						m_id = 1020450659
@@ -131,7 +226,7 @@
 					{
 						m_nodeID = 
 						{
-							m_id = 344905106
+							m_id = 398937811
 						}
 						m_outputID = 
 						{
@@ -149,7 +244,7 @@
 				{
 					_class = "CSequenceAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -334.562897, 100.840088 ]
+					m_vecPosition = [ -512.0, 96.0 ]
 					m_nNodeID = 
 					{
 						m_id = 1478619527
@@ -170,7 +265,7 @@
 				{
 					_class = "CSequenceAnimNode"
 					m_sName = "Unnamed"
-					m_vecPosition = [ -336.0, 160.0 ]
+					m_vecPosition = [ -512.0, 160.0 ]
 					m_nNodeID = 
 					{
 						m_id = 1810320101
@@ -223,6 +318,18 @@
 				m_fDefaultValue = 0.0
 				m_fMinValue = -1.0
 				m_fMaxValue = 1.0
+			},
+			{
+				_class = "CBoolAnimParameter"
+				m_name = "win"
+				m_id = 
+				{
+					m_id = 518445668
+				}
+				m_previewButton = "ANIMPARAM_BUTTON_NONE"
+				m_bUseMostRecentValue = false
+				m_bAutoReset = false
+				m_bDefaultValue = false
 			},
 		]
 	}
